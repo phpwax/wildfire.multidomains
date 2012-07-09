@@ -1,5 +1,5 @@
 <?
-//hook in to the content model and add a join
+CMSApplication::register_module("domain", array('plugin_name'=>'wildfire.multidomain', "display_name"=>"Domains", "link"=>"/admin/domain/", 'split'=>true));
 
 if(!defined("CONTENT_MODEL")){
   $con = new ApplicationController(false, false);
