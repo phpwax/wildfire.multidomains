@@ -1,6 +1,7 @@
 <?php
 
 class MultiDomainController extends ApplicationController{
+  public $cms_content_class = "DomainContent";
   public $domain_class = "Domain";
   public $domain_base_content = false; //this is root of the domains tree
 
