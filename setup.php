@@ -10,7 +10,7 @@ if(!defined("CONTENT_MODEL")){
   $con = new ApplicationController(false, false);
   define("CONTENT_MODEL", $con->cms_content_class);
 }
-
+define("WILDFIRE_MULTIDOMAIN", 1);
 
 WaxEvent::add(CONTENT_MODEL.".setup", function(){
   $model = WaxEvent::data();
